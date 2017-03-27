@@ -1,3 +1,5 @@
+package com.adamkorzeniak;
+
 public class Interval2D {
     private final double start;
     private final double end;

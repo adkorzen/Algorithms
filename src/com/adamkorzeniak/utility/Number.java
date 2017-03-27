@@ -1,3 +1,5 @@
+package com.adamkorzeniak.utility;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,11 +83,12 @@ public class Number {
 
     @Deprecated
     public static int depGreatestCommonDivisor(int first, int second) {
+        first = Math.abs(first);
+        second = Math.abs(second);
         if(first == 0 || second == 0) {
             return Math.max(first, second);
         }
-        first = Math.abs(first);
-        second = Math.abs(second);
+
         int max = Math.max(first, second);
         int min = Math.min(first, second);
         int limit = (int) Math.sqrt((double)min);
@@ -104,10 +107,4 @@ public class Number {
         return 1;
     }
 
-    public static long factorial(int number) {
-        if (number < 2) {
-            return 1;
-        }
-        return factorial(number-1) * number;
-    }
 }

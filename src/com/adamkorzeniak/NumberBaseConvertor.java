@@ -1,3 +1,5 @@
+package com.adamkorzeniak;
+
 public class NumberBaseConvertor {
 
 	public String decimalToBinary(int decimal) {

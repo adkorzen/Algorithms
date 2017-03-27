@@ -1,6 +1,14 @@
+package com.adamkorzeniak;
+
+import com.adamkorzeniak.utility.Number;
+
 public class Rational {
     private final int numerator;
     private final int denominator;
+
+    public double getValue() {
+        return (double) numerator / denominator;
+    }
 
     public Rational(int numerator, int denominator) {
         int commonDivisor = Number.greatestCommonDivisor(numerator, denominator);

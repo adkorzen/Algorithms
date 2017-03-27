@@ -1,4 +1,6 @@
-public class Array {
+package com.adamkorzeniak.utility;
+
+public class Arrays {
 
 	public static double max(double[] array) {
 		if (array.length == 0) {

@@ -1,3 +1,5 @@
+package com.adamkorzeniak;
+
 import java.util.ArrayList;
 import java.util.List;
 

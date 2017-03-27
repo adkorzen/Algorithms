@@ -1,3 +1,5 @@
+package com.adamkorzeniak;
+
 //FIXME
 public class Matrix {
 

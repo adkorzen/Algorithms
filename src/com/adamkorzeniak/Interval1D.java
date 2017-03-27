@@ -1,3 +1,5 @@
+package com.adamkorzeniak;
+
 public class Interval1D {
     private final double start;
     private final double end;
@@ -7,7 +9,7 @@ public class Interval1D {
         this.end = Math.max(first, second);
     }
 
-    public boolean isIntersecting(Interval1D first, Interval1D second) {
-        return !(first.end < second.start || second.end < first.start);
+    public boolean isIntersecting(Interval1D other) {
+        return !(this.end < other.start || other.end < this.start);
     }
 }
